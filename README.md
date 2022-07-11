@@ -1,1 +1,1 @@
-# infovis-exam
+# App de Formación General
