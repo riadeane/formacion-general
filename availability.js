@@ -38,10 +38,10 @@ function isOFG(sigla){
     if (sigla in courses["OFG"]){
         return true
     }
-    else if (!(sigla in courses["NO OFG"]) || !(inDisciplinasProhibidas(sigla))) {
+    else if (sigla in courses["NO OFG"] || inDisciplinasProhibidas(sigla)) {
         return false
     }
-    return false
+    return true
 }
 
 function isOPC(sigla){
